@@ -1,0 +1,44 @@
+<!--
+
+
+    Create a object abour your(my) profile at he minimum 10 properties/fields
+    first name,
+    last name,
+    dob
+    email
+    phone
+
+    hobbies(array with object sport type, achivement,)
+    display your last hobby
+    and your avathar/image in html/page with height 250 width 250, image should be circle
+
+    -> photo need to in assets folder
+
+-->
+
+
+<html>
+    <style>
+        img{
+            border-radius: 50%;
+        }
+    </style>
+<head>
+    <img src="/Users/ravichandrareddy/Desktop/JSTraining/ravichandraalathuru_batch-32/05-31-2023/assets/Ravi.jpg" alt="Ravi" height="250", width="250">
+</head>
+<script>
+
+var profile ={
+    FirstName :"Ravi Chandra",
+    LastName : "Alathuru",
+    DOB : "02-24-1997",
+    University : "Wichita State University",
+    GPA : "4.0/4.0",
+    email : "ravic6630@gmail.com",
+    phone : "7330428449",
+    hobbies: [{SportType: ["Cricket","PS5","Badminton"]}, {achivements: ["Certified Professional Badminton Player"]}]
+    
+};
+console.log(profile.hobbies[0].SportType[2]);
+</script>
+</html>
