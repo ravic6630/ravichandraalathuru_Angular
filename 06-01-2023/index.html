@@ -2,49 +2,51 @@
     
 
 <script>
-    
+                    // BRD
 // Declare a variable  var as Environment with values, based on the environment changing the sending amount
 // for dev environment it should be adding 10%,
 //  test 20%, 
 //  stage 30%, 
 //  prod 5%
 // And Display sending amount.
-
 // co - possible solutions considerations.
- // environment = get_current_environment();
+ 
 
  var amount = 100;
- var environment ="Test";
+ var environment ="dev";
 
-switch(environment){
-    case 'Development':
-    amount=amount+(amount*0.1);
-    break;
+// Possible Solution -1
 
-    case 'Test':
-    amount=amount+(amount*0.2);
-    break;
+// switch(environment){
+//     case 'Development':
+//     amount=amount+(amount*0.1);
+//     break;
 
-    case 'Stage':
-        amount=amount+(amount*0.3);
-        break;
+//     case 'Test':
+//     amount=amount+(amount*0.2);
+//     break;
 
-    case 'prod':
-        amount=amount+(amount*0.05);
-        break;
-    default :
-        console.log("Invalid envy")
+//     case 'Stage':
+//         amount=amount+(amount*0.3);
+//         break;
 
-}
+//     case 'prod':
+//         amount=amount+(amount*0.05);
+//         break;
+//     default :
+//         console.log("Invalid envy")
+
+// }
+// Possible Solution - 2 
+
+amount = environment ==='dev' ? amount +(amount* 0.1) 
+: environment === 'Test' ? amount+(amount * 0.2) 
+: environment === 'Stage' ? amount+(amount*0.3) 
+:environment === 'prod' ? amount+(amount*0.05)
+ : amount;
+
 console.log(amount);
-
-
-
-
-
-
-
-
 
 </script>
 </html>
+
