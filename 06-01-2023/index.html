@@ -40,10 +40,10 @@
 
 // Possible Solution - 2 
 
-amount = environment ==='dev' ? amount +(amount* 0.1) 
-: environment === 'Test' ? amount+(amount * 0.2) 
-: environment === 'Stage' ? amount+(amount*0.3) 
-:environment === 'prod' ? amount+(amount*0.05)
+amount = environment =='dev' ? amount +(amount* 0.1) 
+: environment == 'Test' ? amount+(amount * 0.2) 
+: environment == 'Stage' ? amount+(amount*0.3) 
+:environment == 'prod' ? amount+(amount*0.05)
  : amount;
 
 console.log(amount);
