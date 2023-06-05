@@ -9,23 +9,31 @@ And create a function to delete the specific hobby that I pass from a list.
 
 <html>
     <h1>Ravi Chandra Reddy</h1>
+    <head>
+       <p>New List : <span id="newElement"></span></p>
+       <p> After Adding :<span id="addElement"></span></p>
+       <p>After Deleting :<span id="removeElement"></span></p>
+    </head>
 <script>
 
     const hobbies = ["Super Bowl", "PS5", "Cricket" , "Tennis"];
 
     function displayhobbies() {
         console.log(hobbies);
+        document.getElementById("newElement").innerHTML=hobbies;
     } 
 
     function addhobby(){
         //hobbies.splice(3,0, "Badminton", "Reading Books"); // Didn't mention in BRD for specific position.
         hobbies.push("Badminton");
         console.log(hobbies);
+        document.getElementById("addElement").innerHTML=hobbies;
 
     }
     function Delete() {
         hobbies.splice(2,2); // 2,2 - Index and range
         console.log(hobbies);
+        document.getElementById("removeElement").innerHTML=hobbies;
     }
     
     displayhobbies();
