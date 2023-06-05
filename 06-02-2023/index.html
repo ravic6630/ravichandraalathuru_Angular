@@ -8,15 +8,17 @@ And create a function to delete the specific hobby that I pass from a list.
 -->
 
 <html>
+    <h1>Ravi Chandra Reddy</h1>
 <script>
 
-    const hobbies = ["Reading Books", "PS5", "Cricket" , "Tennis"];
+    const hobbies = ["Super Bowl", "PS5", "Cricket" , "Tennis"];
 
     function displayhobbies() {
         console.log(hobbies);
     } 
 
     function addhobby(){
+        //hobbies.splice(3,0, "Badminton", "Reading Books"); // Didn't mention in BRD for specific position.
         hobbies.push("Badminton");
         console.log(hobbies);
 
