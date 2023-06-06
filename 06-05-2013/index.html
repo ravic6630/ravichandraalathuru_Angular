@@ -1,0 +1,70 @@
+<!--              ----------      BRD      ----------
+    display input fields for all your profile information 
+FN, LN, DOB, email , phone number etc with submit button , on click of submit display all values in Dom
+-->
+
+<html>
+    <h1> Profile information </h1>
+
+    <style>
+        h1
+        {
+           color: blue; 
+        }
+       div{
+        color: darkblue;
+        
+        /* margin: 20px; */
+
+       }
+       body{
+        color: royalblue;
+        /* margin: 20px; */
+       }
+       .message{
+        margin:10px;
+        margin-left: 20px;
+        align-items: baseline;
+       }
+
+    </style>
+    <script>
+        function profileinformation() {
+            document.getElementById('first name').innerHTML = document.getElementById("fname").value;
+            document.getElementById('last name').innerHTML = document.getElementById("lname").value;
+            document.getElementById('DOB').innerHTML = document.getElementById("dob").value;
+            document.getElementById('Email').innerHTML = document.getElementById("email").value;
+            document.getElementById('Phone Number').innerHTML = document.getElementById("phone").value;
+            document.getElementById('Address').innerHTML = document.getElementById("address").value;
+
+            
+        }
+    </script>
+    <div>
+        <label> First Name :</label>
+        <input type="text" class="message" id="fname"> </br>
+        <label> last Name :</label>
+        <input type="text" class="message" id="lname"></br>
+        <label> DOB :</label>
+        <input type="date" class="message" id="dob"><br>
+        <label> Email :</label>
+        <input type="text" class="message" id="email"></br>
+        <label> Phone Number :</label>
+        <input type="text" class="message" id="phone"></br>
+        <label> Address :</label>
+        <input type="text" class="message" id="address"></br>
+    </div>
+    <body>
+        <!-- <input type="text" placeholder="Type something..." id="Ravi"> -->
+        <!-- <button type="button" onclick="profileinformation();">submit</button> -->
+        
+        <input type="submit" onclick="profileinformation();"> 
+        
+        <p><span id='first name'></span></p>
+        <p><span id='last name'></span></p>
+        <p><span id='DOB'></span></p>
+        <p><span id='Email'></span></p>
+        <p><span id='Phone Number'></span></p>
+        <p><span id='Address'></span></p>
+    </body>
+</html>
