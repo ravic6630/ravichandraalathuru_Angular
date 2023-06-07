@@ -1,0 +1,85 @@
+<html>
+    <h1> Profile information </h1>
+
+    <style>
+        h1
+        {
+           color: blue; 
+        }
+       div{
+        color: darkblue;
+        
+        /* margin: 20px; */
+
+       }
+       body{
+        color: royalblue;
+        /* margin: 20px; */
+       }
+       .message{
+        margin:10px;
+        margin-left: 20px;
+        align-items: baseline;
+       }
+
+    </style>
+    <body>
+    <script type="text/javaScript">
+        const arr=[];
+        function profileinformation() {
+            document.getElementById('first name').innerHTML = document.getElementById("fname").value;
+            document.getElementById('last name').innerHTML = document.getElementById("lname").value;
+            document.getElementById('DOB').innerHTML = document.getElementById("dob").value;
+            document.getElementById('Email').innerHTML = document.getElementById("email").value;
+            document.getElementById('Phone Number').innerHTML = document.getElementById("phone").value;
+            document.getElementById('Address').innerHTML = document.getElementById("address").value;
+            document.getElementById('Hobbies').innerHTML = arr;
+            // document.getElementById('Hobbies1').innerHTML = document.getElementById("hobbies1").value;
+        //     const cb = document.querySelector('#hobbies1');
+        // console.log(cb.checked);
+
+            
+        }
+        function check(checked){
+            console.log(checked)
+            arr.push(checked.value)
+            return arr;
+        }
+    </script>
+    <form>
+        <label> First Name :</label>
+        <input type="text" class="message" id="fname" required> </br>
+        <label> last Name :</label>
+        <input type="text" class="message" id="lname" required></br>
+        <label> DOB :</label>
+        <input type="date" class="message" id="dob" required><br>
+        <label> Email :</label>
+        <input type="email" class="message" id="email" required></br>
+        <label> Phone Number :</label>
+        <input type="tel" class="message" id="phone" required></br>
+        <label> Address :</label>
+        <input type="text" class="message" id="address" required></br>
+        <label>Hobbies: </label>
+        <input type="checkbox" id="hobbies" name="Bike" onchange="check(this)" value="Bike riding">
+        <label for="Bike"> Bike ride</label><br>
+        <input type="checkbox" id="hobbies1" name="Tennis" onchange="check(this)" value="Tennis">
+        <label for="Tennis"> Tennis</label><br>
+        <input type="checkbox" id="hobbies2" name="Superbowl" onchange="check(this)" value="Superbowl">
+        <label for="Tennis"> Superbowl</label><br>
+        
+         
+    </form>
+
+        <input type="submit" onclick="profileinformation()"> 
+        <p><span id='first name'></span></p>
+        <p><span id='last name'></span></p>
+        <p><span id='DOB'></span></p>
+        <p><span id='Email'></span></p>
+        <p><span id='Phone Number'></span></p>
+        <p><span id='Address'></span></p>
+        <p><span id='Hobbies'></span></p>
+        <!-- <p><span id='Hobbies1'></span></p> -->
+       
+        
+    </body>
+</html>
