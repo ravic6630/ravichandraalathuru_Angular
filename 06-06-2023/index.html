@@ -40,7 +40,7 @@
 
             
         }
-        function check(checked){
+        function validation(checked){
             console.log(checked)
             arr.push(checked.value)
             return arr;
@@ -60,11 +60,11 @@
         <label> Address :</label>
         <input type="text" class="message" id="address" required></br>
         <label>Hobbies: </label>
-        <input type="checkbox" id="hobbies" name="Bike" onchange="check(this)" value="Bike riding">
+        <input type="checkbox" id="hobbies" name="Bike" onchange="validation(this)" value="Bike riding">
         <label for="Bike"> Bike ride</label><br>
-        <input type="checkbox" id="hobbies1" name="Tennis" onchange="check(this)" value="Tennis">
+        <input type="checkbox" id="hobbies1" name="Tennis" onchange="validation(this)" value="Tennis">
         <label for="Tennis"> Tennis</label><br>
-        <input type="checkbox" id="hobbies2" name="Superbowl" onchange="check(this)" value="Superbowl">
+        <input type="checkbox" id="hobbies2" name="Superbowl" onchange="validation(this)" value="Superbowl">
         <label for="Tennis"> Superbowl</label><br>
         
          
