@@ -1,0 +1,22 @@
+<!-- create a prototype method  on an array or object
+return second smallest value 
+create a customsort on an array to return second smallest value -->
+<html>
+    <head>
+
+    </head>
+    <script>
+
+        function validation(array){
+            this.array=array;
+
+        }
+        validation.prototype.secondsmall = function(){
+            this.array.sort();
+            return this.array[1];
+
+        }
+        const myarray = new validation([2,8,6,4,0,254]);
+        console.log(myarray.secondsmall());
+    </script>
+</html>
