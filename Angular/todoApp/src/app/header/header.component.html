@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="menu">
+      <div class="menu-item">Profile</div>
+      <div class="menu-item">Contact</div>
+      <!-- <div class="menu-item" id="login">Login</div> -->
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Login"/>
+      </div>
+    </div>
+  </div>
+  <script>
+    const loginButton = document.getElementById('login');
+    loginButton.addEventListener('click', toggleLogin);
+  
+    function toggleLogin() {
+      const loginText = loginButton.innerText;
+      if (loginText === 'Login') {
+        loginButton.innerText = 'Logout';
+      } else {
+        loginButton.innerText = 'Login';
+      }
+    }
+  </script>
+
+
+
