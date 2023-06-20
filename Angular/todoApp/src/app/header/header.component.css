@@ -1,24 +1,4 @@
-
 .header {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-}
-
-.menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
 }
-
-.menu-item {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.search-box {
-  width: 200px;
-  padding: 5px;
-}
-

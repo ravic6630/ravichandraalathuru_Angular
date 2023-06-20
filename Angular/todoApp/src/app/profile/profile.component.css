@@ -1,0 +1,32 @@
+.display{
+    position:relative;
+    text-align: center;
+    float: left;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px solid #ddd;
+    border-radius: 10%;
+}
+
+table,div{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+td,tr,th{
+    border-bottom: 1px solid #ddd;
+    border-radius: 10%;
+    padding: 15px;    
+}
+input{
+    text-align: center;
+}
